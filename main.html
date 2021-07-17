@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Easy Web Compiler</title>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css"
+        />
+        <link
+            rel="stylesheet"
+            href="css/main.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.16.2/min/vs/loader.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav>
+                    <strong class="title">Easy Web Compiler</strong>
+                    <div class="right">
+
+                        <div style="margin-right: 30px; width: 100%;">
+    
+                            <label style="float: right" class="container"
+                            >Auto Run<input type="checkbox" checked="checked" id="auto">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div>
+
+                            <button class="runBtn btn1" onclick="runScript()">
+                                <i class="far fa-play-circle"></i>
+                            </button>
+                        </div>
+                        <div style="margin-left: 10px;">
+
+                            <button class="runBtn btn1" onclick="removeScript()">
+                                <i class="fas fa-sync"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="codearia">
+            <div id="editor" style="height: 500px; width: 40%;  margin-left: 5%; "></div>
+            <div id="result" style="height: 500px; width: 40%; margin-left: 5%;">
+                <div class="outputtitle">
+                    <div class="iconarea">
+
+                        <i class="fas fa-poll-h"></i><span class="titlespan">Output</span>
+                    </div>
+                </div>
+                <ul id="output"></ul>
+            </div>
+        </div>
+    </body>
+    <style>
+    </style>
+</html>
