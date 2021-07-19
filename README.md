@@ -1,4 +1,4 @@
-# easywebcompiler
+# easy_code_runner
 CodePen같은 웹컴파일러 사이트 개발  
 
 ### Project    <a href="">사이트 바로가기(호스팅 안되어있음)</a>
